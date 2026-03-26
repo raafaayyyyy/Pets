@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patrona Puppy - Dog Breeds</title>
+    <link rel="stylesheet" href="assets/css/style.css ">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+    <style>
+
+    </style>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header class="header">
+ <a href="" class="logo">PATRONA <span>PUPPY</span></a>
+    
+    <input type="checkbox" id="check">
+    <label for="check" class="icons">
+        <i class='bx bx-menu' id="menu-icon"></i>
+        <i class='bx bx-x' id="colse-icon"></i>
+    </label>
+    <nav class="navbar">
+      <a href="index.html" style="--i:0">Home</a>
+      <a href="dogscategories.html" style="--i:0">Dogs Categories</a>
+      <a href="gallery.html" style="--i:1">Gallery</a>
+      <a href="tips-nutrition.html" style="--i:2">Tips And Nutrition</a>
+      <a href="about.html" style="--i:3">About Us</a>
+      <a href="contact.html" style="--i:4">Contact Us</a>
+  </nav>
+    </header>
+      <!-- <div id="breadcrumb" class="breadcrumb"></div>  -->
+    <div class="heading-categories">
+        <h1>Dogs <span>Categories</span></h1>
+    </div>
+    <p class="intro-paragraph">
+        Dogs come in many shapes and sizes, each with their own unique characteristics and qualities. In this
+        collection, you will find popular dog breeds, ranging from playful companions to hardworking service animals.
+        These breeds are loved by families all over the world and make for loyal, loving pets.
+    </p>
+
+        <div class="filters">
+            <label for="country-filter">Filter by Country:</label>
+            <select id="country-filter">
+              <option value="all">All Countries</option>
+              <option value="Canada">Canada</option>
+              <option value="Germany">Germany</option>
+              <option value="United Kingdom">United Kingdom</option>
+              <option value="France">France</option>
+              <option value="China">China</option>
+              <option value="Mexico">Mexico</option>
+              <option value="Japan">Japan</option>
+              <option value="Russia">Russia</option>
+              <option value="Switzerland">Switzerland</option>
+              <option value="Mediterranean">Mediterranean</option>
+              <option value="United States">United States</option>
+            </select>
+          </div>
+          
+          <div class="container-categories">
+          </div>
+          
+          
+    <footer>
+        <div class="footer-container">
+          <div class="row">
+    
+            <div class="footer-col">
+              <h4>About Us</h4>
+              <ul>
+                <li><a href="whoweare.html">Who We Are</a></li>
+                <li><a href="dogscategories.html">Dog Categories</a></li>
+                <li><a href="doghistory.html">Dog History</a></li>
+                <li><a href="team.html">Our Team</a></li>
+              </ul>
+            </div>
+    
+            <div class="footer-col">
+              <h4>Get Help</h4>
+              <ul>
+                <li><a href="faqs.html">FAQs</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="training-tips.html">Training Tips</a></li>
+                <li><a href="health.html">Dog Health</a></li>
+                <li><a href="tips-nutrition.html">Nutrition Advice</a></li>
+              </ul>
+            </div>
+    
+            <div class="footer-col" id="popular-breeds">
+              <h4>Popular Breeds</h4>
+              <ul>
+                <li><a href="breed-labrador.html">Labrador Retriever</a></li>
+                <li><a href="breed-german-shepherd.html">German Shepherd</a></li>
+                <li><a href="breed-beagle.html">Beagle</a></li>
+                <li><a href="breed-poodle.html">Poodle</a></li>
+                <li><a href="breed-bulldog.html">Bulldog</a></li>
+              </ul>
+            </div>
+    
+            <div class="footer-col">
+              <h4>Follow Us</h4>
+              <div class="social-links">
+                <a href="https://facebook.com/yourdogencyclopedia" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://twitter.com/yourdogencyclopedia" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://instagram.com/yourdogencyclopedia" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://linkedin.com/company/yourdogencyclopedia" target="_blank"><i
+                    class="fab fa-linkedin-in"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <footer class="footer-bottom">
+        <div class="footer-left">
+            &copy; 2025 PATRONA Puppy. All rights reserved.
+        </div>
+        <div class="footer-center">
+            <a href="#">Privacy Policy</a> | <a href="#">Terms & Conditions</a>
+        </div>
+        <div class="footer-right">
+            Made by ABDUL RAFAY's Team
+        </div>
+    </footer>
+       <script>document.addEventListener("DOMContentLoaded", function () {
+      const dogData = [
+  { title: "Labrador Retriever", country: "Canada", image: "assets/images/dog17.jpg", description: "Labradors are friendly, outgoing, and high-spirited companions. They are one of the most popular breeds known for their intelligence and loyalty. Their playful nature makes them great for families with children." },
+  { title: "German Shepherd", country: "Germany", image: "assets/images/german2.jpg", description: "German Shepherds are known for their intelligence, loyalty, and versatility. They are often used in police and military work and are exceptional guard dogs. They are highly trainable and loyal to their families." },
+  { title: "Golden Retriever", country: "United Kingdom", image: "assets/images/golden-retriever.jpg", description: "Golden Retrievers are known for their friendly and tolerant attitudes. They are reliable, friendly, trustworthy, and kind. As family pets, they are particularly gentle with children." },
+  { title: "Bulldog", country: "United Kingdom", image: "assets/images/bulldog.jpg", description: "Bulldogs are courageous and strong dogs. They are known for their muscular builds and loose skin, with a unique wrinkled face. Despite their tough appearance, they are gentle and affectionate." },
+  { title: "Beagle", country: "United Kingdom", image: "assets/images/beaglee.jpg", description: "Beagles are friendly, curious, and merry dogs. They are excellent hunting dogs and are known for their keen sense of smell and tracking instincts. They make great companions for active families." },
+  { title: "Poodle", country: "France", image: "assets/images/poodle1.jpg", description: "Poodles are highly intelligent, elegant, and trainable dogs. They come in three sizes: standard, miniature, and toy. Known for their hypoallergenic coat, Poodles are a favorite among families and individuals with allergies." },
+  { title: "French Bulldog", country: "France", image: "assets/images/french-bulldog.jpg", description: "French Bulldogs are known for their compact size and distinctive bat-like ears. They are affectionate, easygoing, and make great pets for apartment living due to their small size." },
+  { title: "Rottweiler", country: "Germany", image: "assets/images/rottweiler3.png", description: "Rottweilers are powerful, confident, and loyal dogs. They are known for their strength and protective instincts, making them excellent guard dogs. Despite their intimidating presence, they are affectionate with their families." },
+  { title: "Dachshund", country: "Germany", image: "assets/images/dachshund.jpg", description: "Dachshunds are playful, curious, and brave. They are known for their long bodies and short legs. Despite their small size, they have a big personality and make excellent companions." },
+  { title: "Boxer", country: "Germany", image: "assets/images/boxer.jpg", description: "Boxers are energetic, playful, and loving dogs. They are known for their muscular build and boundless energy. Boxers make excellent family pets, as they are loyal, affectionate, and protective." },
+  { title: "Shih Tzu", country: "China", image: "assets/images/Shih-tzu-dog.webp", description: "Shih Tzus are small, friendly, and affectionate dogs. Known for their beautiful long coats, they are well-suited for families and individuals who can care for their grooming needs." },
+  { title: "Chihuahua", country: "Mexico", image: "assets/images/chihuahua.jpg", description: "Chihuahuas are tiny but full of personality. They are known for being loyal, brave, and affectionate despite their small size. Chihuahuas are a great choice for apartment living." },
+  { title: "Shiba Inu", country: "Japan", image: "assets/images/shiba.jpg", description: "The Shiba Inu is a small, agile dog from Japan, known for its fox-like appearance and bold personality. It’s independent, alert, and loyal, with a distinct curled tail." },
+  { title: "Siberian Husky", country: "Russia", image: "assets/images/Siberian-Husky-dog.jpg", description: "Siberian Huskies are energetic, independent, and friendly dogs. Known for their striking blue or multi-colored eyes, they are excellent sled dogs and make loyal companions." },
+  { title: "Border Collie", country: "United Kingdom", image: "assets/images/border-collie.webp", description: "Border Collies are intelligent, energetic, and agile dogs. Known for their herding skills, they excel in dog sports and training activities. Their loyalty and drive make them a favorite for active families and working environments." },
+  { title: "Pug", country: "China", image: "assets/images/Pug-dog.webp", description: "Pugs are charming, loving, and fun-loving dogs. They have a distinctive wrinkled face and curly tail. Pugs are known for their affectionate and playful nature." },
+  { title: "Doberman Pinscher", country: "Germany", image: "assets/images/doberman.png", description: "Dobermans are intelligent, alert, and loyal dogs. Known for their protective nature, they excel in roles such as guard dogs and police work." },
+  { title: "Maltese", country: "Mediterranean", image: "assets/images/maltese.jpg", description: "Maltese are small, lively dogs with a beautiful white coat. They are affectionate, friendly, and enjoy being the center of attention." },
+  { title: "Saint Bernard", country: "Switzerland", image: "assets/images/Saint-bernard-dog.jpg", description: "Saint Bernards are large, gentle giants known for their calm demeanor and strong rescue instincts. They are great family dogs and protective companions." },
+  { title: "Australian Shepherd", country: "United States", image: "assets/images/Australian-Shepherd.avif", description: "Australian Shepherds are highly intelligent, energetic, and loyal dogs. Known for their herding abilities, they are great companions for active families." },
+];
+
+
+      
+        const dogContainer = document.querySelector(".container-categories");
+        const countryFilter = document.getElementById("country-filter");
+        function renderDogs(filteredDogs) {
+          dogContainer.innerHTML = "";
+          filteredDogs.forEach(dog => {
+            const dogCard = `
+              <div class="breed-card">
+                <div class="breed-image" style="background-image: url(${dog.image});"></div>
+                <div class="breed-info">
+                  <div class="breed-title">${dog.title}</div>
+                  <div class="breed-description">${dog.description}</div>
+                </div>
+              </div>`;
+            dogContainer.innerHTML += dogCard;
+          });
+        }
+        renderDogs(dogData);
+        countryFilter.addEventListener("change", () => {
+          const selectedCountry = countryFilter.value;
+          const filteredDogs = selectedCountry === "all"
+            ? dogData
+            : dogData.filter(dog => dog.country === selectedCountry);
+          renderDogs(filteredDogs);
+        });
+      });
+      </script>
+</body>
+</html>

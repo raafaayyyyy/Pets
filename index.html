@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Patronna Puppy - Home</title>
+  <link href="assets\css\style.css" rel="stylesheet">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <header class="header">
+    <a href="" class="logo">PATRONA <span>PUPPY</span></a>
+
+    <input type="checkbox" id="check">
+    <label for="check" class="icons">
+      <i class='bx bx-menu' id="menu-icon"></i>
+      <i class='bx bx-x' id="colse-icon"></i>
+    </label>
+    <nav class="navbar">
+      <a href="index.html" style="--i:0">Home</a>
+      <a href="dogscategories.html" style="--i:0">Dogs Categories</a>
+      <a href="gallery.html" style="--i:1">Gallery</a>
+      <a href="tips-nutrition.html" style="--i:2">Tips And Nutrition</a>
+      <a href="about.html" style="--i:3">About Us</a>
+      <a href="contact.html" style="--i:4">Contact Us</a>
+    </nav>
+  </header>
+
+  <section class="hero-section">
+    <div class="hero-content">
+      <h1>Explore the World of Dogs</h1>
+      <p>Your ultimate guide to dog breeds, care, and companionship!</p>
+      <div class="hero-buttons">
+        <a href="breeds" class="primary-btn" onclick="navigateTo('#breeds')">Discover Breeds</a>
+        <a href="Tips" class="secondary-btn" onclick="navigateTo('#Tips')">Dog Care Tips</a>
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <section id="breeds"></section>
+  <div class="card-container">
+    <div class="card">
+      <img src="assets/images/card-1.jpg" alt="Labrador Retriever">
+      <div class="card-content">
+        <h3>Labrador Retriever</h3>
+        <p>Country of Origin: Canada. <br> Labrador Retrievers are well-loved for their friendly and gentle nature. They
+          are intelligent, loyal, and easy to train, making them excellent family pets.</p>
+        <p class="more-text">Originally bred as fishing and retrieving dogs, they are highly energetic and enjoy outdoor
+          activities such as swimming and running. Labs are also known for their versatility in service roles, including
+          being guide dogs for the blind. <br>
+          Size: Medium to large
+          Personality: Outgoing, friendly, loyal
+          Life Expectancy: 10-12 years</p>
+        <span class="read-more" onclick="toggleDetails(this)">Read More</span>
+      </div>
+    </div>
+    <div class="card">
+      <img src="assets/images/card-2.webp" alt="German Shepherd">
+      <div class="card-content">
+        <h3>German Shepherd</h3>
+        <p>Country of Origin: Germany. <br>German Shepherds are highly intelligent, strong, and courageous dogs. They
+          were originally bred for herding and guarding sheep. </p>
+        <p class="more-text"> These dogs are highly trainable and are often used in police and military work, as well as
+          search and rescue operations. German Shepherds are protective of their families and are known to be excellent
+          working dogs. <br>
+          Size: Large
+          Personality: Confident, courageous, intelligent
+          Life Expectancy: 9-13 years</p>
+        <span class="read-more" onclick="toggleDetails(this)">Read More</span>
+      </div>
+    </div>
+    <div class="card">
+      <img src="assets/images/card-3.jpeg" alt="Golden Retriever">
+      <div class="card-content">
+        <h3>Golden Retriever</h3>
+        <p>Country of Origin: Scotland, United Kingdom. <br>Description: Golden Retrievers are known for their beautiful
+          golden coats and gentle, friendly temperament. </p>
+        <p class="more-text">They are very social and get along well with children, other pets, and strangers. Golden
+          Retrievers are also extremely trainable, making them a favorite for service dog work, such as therapy and
+          assistance dogs. Their playful nature and intelligence make them excellent companions. <br>
+          Size: Medium to large
+          Personality: Friendly, trustworthy, intelligent
+          Life Expectancy: 10-12 years</p>
+        <span class="read-more" onclick="toggleDetails(this)">Read More</span>
+      </div>
+    </div>
+    <div class="card">
+      <img src="assets/images/card-4.jpeg" alt="Bulldog">
+      <div class="card-content">
+        <h3>Bulldog</h3>
+        <p>Country of Origin: United Kingdom. <br>Description: Bulldogs are calm and docile with a distinctive wrinkled
+          face and sturdy, muscular build.</p>
+        <p class="more-text">Despite their tough appearance, they are affectionate and make excellent companions.
+          Bulldogs are good with children and are generally low-energy, making them ideal for apartment living. They are
+          also known for their perseverance and courage, as they were originally bred for bull-baiting. <br>
+          Size: Medium
+          Personality: Loyal, courageous, calm
+          Life Expectancy: 8-12 years</p>
+        <span class="read-more" onclick="toggleDetails(this)">Read More</span>
+      </div>
+    </div>
+    <div class="card">
+      <img src="assets/images/card-5.jpeg" alt="Beagle">
+      <div class="card-content">
+        <h3>Beagle</h3>
+        <p>Country of Origin: United Kingdom. <br>Beagles are small hound dogs known for their incredible sense of smell
+          and strong hunting instincts. </p>
+        <p class="more-text">They are friendly, affectionate, and energetic dogs that thrive on companionship. Beagles
+          are great with children and other pets and are known to be curious and outgoing. They are often used as
+          detection dogs due to their keen sense of smell. <br>
+          Size: Small to medium
+          Personality: Friendly, curious, merry
+          Life Expectancy: 12-15 years</p>
+        <span class="read-more" onclick="toggleDetails(this)">Read More</span>
+      </div>
+    </div>
+    <div class="card">
+      <img src="assets/images/card-6.jpeg" alt="Poodle">
+      <div class="card-content">
+        <h3>Poodle</h3>
+        <p>Country of Origin: Germany (but closely associated with France). <br>Poodles come in three sizes—standard,
+          miniature, and toy—and are known for their curly, hypoallergenic coats. </p>
+        <p class="more-text">They are highly intelligent, energetic, and trainable dogs that excel in dog sports and
+          competitive obedience. Poodles are social and get along well with children and other pets. Despite their
+          elegant appearance, they are active and playful dogs. <br>
+          Size: Toy, Miniature, Standard
+          Personality: Intelligent, active, playful
+          Life Expectancy: 12-15 years</p>
+        <span class="read-more" onclick="toggleDetails(this)">Read More</span>
+      </div>
+    </div>
+    <div class="card">
+      <img src="assets/images/card-7.jpeg" alt="Chihuahua">
+      <div class="card-content">
+        <h3>Chihuahua</h3>
+        <p>Country of Origin: Mexico. <br>The Chihuahua is the smallest dog breed in the world, known for its big
+          personality in a tiny body.</p>
+        <p class="more-text"> Chihuahuas are loyal and often form strong bonds with their owners. They are confident and
+          alert, making them excellent watchdogs. Though small, Chihuahuas are bold and love to be the center of
+          attention. <br>
+          Size: Small
+          Personality: Bold, confident, loyal
+          Life Expectancy: 12-20 years</p>
+        <span class="read-more" onclick="toggleDetails(this)">Read More</span>
+      </div>
+    </div>
+    <div class="card">
+      <img src="assets/images/card-8.jpeg" alt="Dachshund">
+      <div class="card-content">
+        <h3>Dachshund</h3>
+        <p>Country of Origin: Germany <br> Dachshunds, also known as "wiener dogs," are small dogs with long bodies and
+          short legs.</p>
+        <p class="more-text"> They were originally bred for hunting small animals like badgers, which explains their
+          determination and courage. Dachshunds are lively, intelligent, and friendly dogs that are particularly
+          affectionate toward their families. <br>
+          Size: Small
+          Personality: Independent, brave, playful
+          Life Expectancy: 12-16 years</p>
+        <span class="read-more" onclick="toggleDetails(this)">Read More</span>
+      </div>
+    </div>
+    <div class="card">
+      <img src="assets/images/card-9.jpeg" alt="Siberian Husky">
+      <div class="card-content">
+        <h3>Siberian Husky</h3>
+        <p>Country of Origin: Russia (Siberia). <br> Siberian Huskies are strikingly beautiful dogs with their thick
+          double coat and striking blue or multicolored eyes. </p>
+        <p class="more-text"> They are known for their endurance and were originally bred to pull sleds across the
+          frozen terrain of Siberia. Huskies are friendly, independent, and energetic dogs that require a lot of
+          exercise and mental stimulation. They are not typically guard dogs, as they are friendly with strangers. <br>
+          Size: Medium to large
+          Personality: Friendly, energetic, independent
+          Life Expectancy: 12-15 years </p>
+        <span class="read-more" onclick="toggleDetails(this)">Read More</span>
+      </div>
+    </div>
+  </div>
+  </div>
+  </section>
+
+  <section id="Tips"></section>
+  <div class="container-nutrition">
+    <div class="section-nutrition">
+      <h2>General Nutrition Tips for Dogs</h2>
+      <p>Providing balanced nutrition is essential for a dog's health and longevity. A good diet includes
+        proteins, carbohydrates, fats, vitamins, and minerals. Make sure to avoid harmful foods like chocolate,
+        grapes, and onions. Always ensure a clean and steady supply of fresh water for hydration.</p>
+      <button class="collapsible">Common Foods to Avoid</button>
+      <div class="content">
+        <p>Some common foods that can be harmful to dogs include:</p>
+        <ul>
+          <li>Chocolate (contains theobromine, toxic to dogs)</li>
+          <li>Grapes and raisins (can cause kidney failure)</li>
+          <li>Onions and garlic (can damage red blood cells)</li>
+          <li>Xylitol (found in sugar-free gum, can cause liver failure)</li>
+        </ul>
+      </div>
+    </div>
+    <div class="section-nutrition">
+      <h2>Breed-Specific Nutrition</h2>
+      <div class="nutrition-grid">
+        <div class="nutrition-item">
+          <h3>Labrador Retriever</h3>
+          <p>Labradors have a tendency to overeat. A controlled diet rich in protein and low in fat is ideal.
+            Include joint supplements to prevent arthritis. Exercise regularly to maintain a healthy weight.
+          </p>
+        </div>
+        <div class="nutrition-item">
+          <h3>German Shepherd</h3>
+          <p>German Shepherds need a high-protein diet to support their muscle mass. Glucosamine and
+            chondroitin are essential for joint health. Ensure they get a mix of dry kibble and wet food to
+            maintain dental health.</p>
+        </div>
+        <div class="nutrition-item">
+          <h3>Golden Retriever</h3>
+          <p>Golden Retrievers require a diet rich in omega-3 fatty acids for a healthy coat and joint health.
+            Avoid overfeeding as they are prone to obesity. Include vegetables and fruits for added fiber
+            and nutrients.</p>
+        </div>
+        <div class="nutrition-item">
+          <h3>Bulldog</h3>
+          <p>Bulldogs often face digestive issues. A diet with high-quality protein and easily digestible
+            carbohydrates can help maintain their health. Provide smaller, more frequent meals to prevent
+            bloating.</p>
+        </div>
+        <div class="nutrition-item">
+          <h3>Beagle</h3>
+          <p>Beagles are active and require a diet that supports their energy levels. Look for foods high in
+            protein and fiber to keep them full and energized. Monitor portion sizes to prevent overeating.
+          </p>
+        </div>
+        <div class="nutrition-item">
+          <h3>Poodle</h3>
+          <p>Poodles benefit from a diet that supports their curly coat and skin health. Include omega-3 and
+            omega-6 fatty acids. Avoid grains if they show signs of allergies.</p>
+        </div>
+        <div class="nutrition-item">
+          <h3>Chihuahua</h3>
+          <p>Chihuahuas have a fast metabolism and need nutrient-dense food. Include lean protein and healthy
+            fats in their diet. Avoid foods with large kibble sizes as they may have difficulty chewing.</p>
+        </div>
+        <div class="nutrition-item">
+          <h3>Dachshund</h3>
+          <p>Dachshunds are prone to obesity and spinal issues. Feed them a low-fat diet with moderate
+            protein. Include glucosamine and chondroitin supplements for joint health.</p>
+        </div>
+        <div class="nutrition-item">
+          <h3>Siberian Husky</h3>
+          <p>Siberian Huskies have high energy needs. Provide a diet rich in protein and healthy fats to
+            support their active lifestyle. Include fish for omega-3 fatty acids to maintain their thick
+            coat.</p>
+        </div>
+      </div>
+    </div>
+    <div class="section-nutrition">
+      <h2>Healthy Treats for Dogs</h2>
+      <p>Healthy treats like carrots, apples, and sweet potatoes can provide a nutritious snack. Avoid treats with
+        artificial additives or excessive sugar. Use treats as a form of positive reinforcement during training
+        sessions.</p>
+    </div>
+    <div class="section-nutrition">
+      <h2>Hydration Tips</h2>
+      <p>Always ensure your dog has access to fresh, clean water. Hydration is especially important during hot
+        weather or after exercise. You can also offer ice cubes as a refreshing treat.</p>
+    </div>
+    <div class="section-nutrition">
+      <h2>Common Health Issues Linked to Nutrition</h2>
+      <p>Poor nutrition can lead to issues like obesity, diabetes, and joint problems. Monitor your dog's weight
+        and consult a veterinarian for any dietary concerns. Regular health check-ups can prevent long-term
+        health issues.</p>
+      <button class="collapsible">Signs of Nutritional Deficiency</button>
+      <div class="content">
+        <p>Watch out for these signs of nutritional deficiency:</p>
+        <ul>
+          <li>Dull or flaky coat</li>
+          <li>Lethargy or lack of energy</li>
+          <li>Weight loss or gain</li>
+          <li>Digestive issues such as diarrhea or constipation</li>
+        </ul>
+      </div>
+    </div>
+    <div class="section-nutrition">
+      <h2>Feeding Schedules</h2>
+      <p>Establishing a consistent feeding schedule helps with digestion and discipline. Puppies should be fed 3-4
+        times a day, while adult dogs can be fed twice daily. Avoid feeding right before or after heavy exercise
+        to prevent bloating.</p>
+    </div>
+    <div class="section-nutrition">
+      <h2>Exercise and Nutrition</h2>
+      <p>Physical activity plays a vital role in a dog's overall health. Match their diet to their activity level
+        to maintain a healthy weight. Active breeds like Border Collies need more calories compared to less
+        active breeds like Bulldogs.</p>
+    </div>
+    <div class="section-nutrition">
+      <h2>Conclusion</h2>
+      <p>Providing proper nutrition tailored to your dog's breed, age, and activity level is key to ensuring their
+        health and happiness. Always consult a veterinarian for personalized advice and regular check-ups.</p>
+    </div>
+  </div>
+  </section>
+  
+  <div class="about-section">
+    <div class="section-who">
+      <div class="section-content">
+        <div class="section-text">
+          <h2>Who We Are: Passion Meets Purpose</h2>
+          <p>At PATRONA Puppy, we celebrate the world of dogs in all its diversity. Founded by the renowned
+            veteran and animal lover, Ms. Patrona, this platform is more than just a website—it's an
+            encyclopedia of canine companionship. With a passion for photography and years of experience
+            studying animal behavior, Ms. Patrona has created a haven for dog enthusiasts, breeders, and curious
+            minds alike.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="section-patrona">
+      <div class="section-content">
+        <img src="assets/images/dog23 (1).jpg" alt="">
+        <div class="section-text">
+          <h2>Meet Ms. Patrona: The Visionary Behind PATRONA Puppy</h2>
+          <p>Ms. Patrona is a celebrated veteran, an accomplished author, and an avid animal lover with a soft
+            spot for dogs, cats, and rabbits. Her extensive career introduced her to various dog breeds, their
+            unique behaviors, and heartwarming stories of companionship. Combining her love for animals with her
+            photography skills, she has curated a vast collection of images and insights. This website is her
+            way of sharing her journey and passion with the world.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="section-mission">
+      <div class="section-content">
+        <div class="section-text">
+          <h2>Our Mission & Vision</h2>
+          <p>At PATRONA Puppy, our mission is to educate, inspire, and connect people through a shared love of
+            dogs. We aim to provide valuable resources for dog owners, breeders, and enthusiasts, fostering a
+            deeper understanding of dog behavior, health, and training. Our vision is to create a global
+            community where individuals can share their experiences, learn from one another, and celebrate the
+            bond between humans and dogs.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="section-history">
+      <div class="section-content">
+        <img src="assets/images/dog23 (5).jpg" alt="">
+        <div class="section-text">
+          <h2>Dog's History: A Journey Through Time</h2>
+          <p>Dogs have been companions to humans for thousands of years, with evidence suggesting that
+            domestication began over 15,000 years ago. From hunting partners to loyal pets, dogs have evolved
+            alongside humans, playing a significant role in society, agriculture, and even warfare. In this
+            section, we explore the fascinating history of dogs and their journey from wild animals to beloved
+            family members.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="section-team">
+      <div class="section-content">
+        <div class="section-text">
+          <h2>Our Team: Meet the Passionate Minds Behind PATRONA Puppy</h2>
+          <p>Our team is made up of individuals who share a deep love and passion for dogs, bringing unique
+            perspectives and expertise to PATRONA Puppy. Together, we work to provide valuable insights and
+            resources for dog lovers everywhere. Let’s meet the team:</p>
+            <ul>
+              <li><strong>Abdul Rafay</strong> - Founder & Full Stack Web Developer</li>
+              <li><strong>Siraj Jamal</strong> - Co-Founder & Full Stack Web Developer</li>
+              <li><strong>Muhammad Huzaifa</strong> - Member & Web Designer</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="cta">
+      <a href="contact.html">Join the PATRONA Puppy Community</a>
+    </div>
+  </div>
+  </div>
+
+
+
+
+
+
+  <footer>
+    <div class="footer-container">
+      <div class="row">
+
+        <div class="footer-col">
+          <h4>About Us</h4>
+          <ul>
+            <li><a href="whoweare.html">Who We Are</a></li>
+            <li><a href="dogscategories.html">Dog Categories</a></li>
+            <li><a href="doghistory.html">Dog History</a></li>
+            <li><a href="team.html">Our Team</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Get Help</h4>
+          <ul>
+            <li><a href="faqs.html">FAQs</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="training-tips.html">Training Tips</a></li>
+            <li><a href="health.html">Dog Health</a></li>
+            <li><a href="tips-nutrition.html">Nutrition Advice</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col" id="popular-breeds">
+          <h4>Popular Breeds</h4>
+          <ul>
+            <li><a href="breed-labrador.html">Labrador Retriever</a></li>
+            <li><a href="breed-german-shepherd.html">German Shepherd</a></li>
+            <li><a href="breed-beagle.html">Beagle</a></li>
+            <li><a href="breed-poodle.html">Poodle</a></li>
+            <li><a href="breed-bulldog.html">Bulldog</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Follow Us</h4>
+          <div class="social-links">
+            <a href="https://facebook.com/yourdogencyclopedia" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://twitter.com/yourdogencyclopedia" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://instagram.com/umair__.shaikh" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://linkedin.com/company/yourdogencyclopedia" target="_blank"><i
+                class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  
+  <footer class="footer-bottom">
+    <div class="footer-left">
+        &copy; 2025 PATRONA Puppy. All rights reserved.
+    </div>
+    <div class="footer-center">
+        <a href="#">Privacy Policy</a> | <a href="#">Terms & Conditions</a>
+    </div>
+    <div class="footer-right">
+        Made by ABDUL RAFAY's Team
+    </div>
+</footer>
+
+  <script>
+    const collapsibles = document.querySelectorAll('.collapsible');
+    collapsibles.forEach(collapsible => {
+      collapsible.addEventListener('click', function () {
+        this.classList.toggle('active');
+        const content = this.nextElementSibling;
+        if (content.style.display === 'block') {
+          content.style.display = 'none';
+        } else {
+          content.style.display = 'block';
+        }
+      });
+    });
+
+function toggleDetails(button) {
+  const moreText = button.previousElementSibling;
+  if (moreText.style.display === "none" || moreText.style.display === "") {
+    moreText.style.display = "block";
+    button.textContent = "Read Less";
+  } else {
+    moreText.style.display = "none";
+    button.textContent = "Read More";
+  }
+}
+document.querySelector('.primary-btn').addEventListener('click', (e) => {
+  e.preventDefault();
+  document.querySelector('#breeds').scrollIntoView({ behavior: 'smooth' });
+});
+document.querySelector('.secondary-btn').addEventListener('click', (e) => {
+  e.preventDefault();
+  document.querySelector('#Tips').scrollIntoView({ behavior: 'smooth' });
+});
+  </script>
+</body>
+</html>
